@@ -71,7 +71,7 @@ export default function Home() {
         <div className="flex justify-center gap-6">
           <Button
             onClick={handleYesClick}
-            className="px-8 py-3 text-lg transition-transform transform hover:scale-105 focus:scale-105"
+            className="px-8 py-3 text-lg transition-transform transform hover:scale-105 focus:scale-105 scale-150"
             variant="default" // Uses --primary (magenta)
           >
             Yes
