@@ -18,7 +18,7 @@ body {
     --popover: 210 40% 98%;
     --popover-foreground: 224 71.4% 4.1%;
 
-    --primary: 300 60% 50%; /* Magenta */
+    --primary: 335 100% 44.3%; /* Magenta */
     --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 210 10% 90%; /* Grey */
@@ -127,4 +127,5 @@ body {
 .animate-wiggle-fast {
   animation: wiggle 0.15s linear infinite;
 }
+
 
