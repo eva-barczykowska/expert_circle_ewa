@@ -4,6 +4,7 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
+import confetti from "canvas-confetti";
 
 export default function Home() {
   const { toast } = useToast();
@@ -11,11 +12,22 @@ export default function Home() {
   const [isWiggling, setIsWiggling] = React.useState(false);
   const noButtonRef = React.useRef<HTMLButtonElement>(null);
 
+  const showConfetti = () => {
+    confetti({
+      particleCount: 150,
+      spread: 120,
+      origin: { y: 0.6 },
+      disableForReducedMotion: true,
+    });
+  }
+
   const handleYesClick = () => {
+    showConfetti();
     toast({
       title: "Accepted!",
       description: "Thank you! Ewa is delighted!",
     });
+    
   };
 
   const moveButton = () => {
